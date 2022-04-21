@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Mix - Silver Lychee 25ml",
+    "stock": 15,
+    "price": 18999,
+    "description": "Mix - Silver Lychee 15ml, Freebase 6mg, Salt Nicotine 20mg, Liquid Pod Mod.",
+    "category": "Freebase"
+  },
+  {
+    "name": "Mix - Brown - Cream and Cookies 15ml",
+    "stock": 12,
+    "price": 18999,
+    "description": "Mix - Brown - Cream & Cookies 15ml, Freebase 6mg, Salt Nic 20mg, Liquid SnakeHeadJuice.",
+    "category": "Freebase"
+  },
+  {
+    "name": "Grape Ice 30ml",
+    "stock": 8,
+    "price": 90000,
+    "description": "Ice Berg by Hex 60ml ",
+    "category": "Salt Nic"
+  },
+  {
+    "name": "Bucks Cream",
+    "stock": 7,
+    "price": 90000,
+    "description": "Bucks Cream",
+    "category": "Salt Nic"
+  },
+  {
+    "name": "Ice Berg by Hex 60ml",
+    "stock": 6,
+    "price": 25000,
+    "description": "Ice Berg by Hex 60ml",
+    "category": "Freebase"
+  }
+]
