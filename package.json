@@ -1,7 +1,6 @@
 {
   "name": "untitled-folder",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +16,14 @@
   "devDependencies": {
     "nodemon": "^2.0.15",
     "sequelize-cli": "^6.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khairayuri0211/Pair_Programing23.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Khairayuri0211/Pair_Programing23/issues"
+  },
+  "homepage": "https://github.com/Khairayuri0211/Pair_Programing23#readme",
+  "description": ""
 }
