@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= product.name %></title>
+  </head>
+  <body>
+    <nav>
+      <a href="/user">HomePage</a>
+      <a href="/logout">Log Out</a>
+    </nav>
+    <br />
+
+    <div>
+      <h1>Eleven Bottles</h1>
+    </div>
+    <br />
+
+    <div>
+      <table border="2">
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Stock</th>
+        </tr>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.Category.name %></td>
+          <td><%= product.ProductDetail.description %></td>
+          <td><%= product.formatPrice() %></td>
+          <td><%= product.stock %></td>
+        </tr>
+      </table>
+
+      <div>
+        <form action="/user/product/<%= product.id %>/order" method="post">
+          <p><b>Price: </b><%= product.formatPrice() %></p>
+
+          <label><b>Quantity</b></label
+          ><br />
+          <input type="number" name="quantity" placeholder="1" /><br /><br />
+
+          <label><b>Shipping Address</b></label
+          ><br />
+          <textarea
+            name="shippingAddress"
+            id="shippingAddress"
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Buy</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
