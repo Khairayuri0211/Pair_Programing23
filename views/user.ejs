@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/user">HomePage</a>
+      <a href="/logout">Log Out</a>
+    </nav>
+    <br />
+
+    <div>
+      <h1>Eleven Bottles</h1>
+    </div>
+    <br />
+
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+      </tr>
+      <% products.forEach(product => { %>
+        <% if (product.stock !== 0) { %>
+          <tr>
+            <td>
+              <a href="/user/product/<%= product.id %>"><%= product.name %></a>
+            </td>
+            <td><%= product.formatPrice() %></td>
+            <td><%= product.stock %></td>
+          </tr>
+        <% } %> 
+      <% }) %>
+    </table>
+    <br /><br />
+
+    <table border="2">
+      <tr>
+        <th>Order Number</th>
+        <th>Shipping Address</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+        <th>Status</th>
+        <th>Order Date</th>
+      </tr>
+      <% orders.forEach(order => { %>
+      <tr>
+        <td><%= order.orderNum %></td>
+        <td><%= order.shippingAddress %></td>
+        <td><%= order.Product.name %></td>
+        <td><%= order.quantity %></td>
+        <td><%= order.formatTotalPrice() %></td>
+        <td><%= order.status %></td>
+        <td><%= formatDate(order.orderDate) %></td>
+      </tr>
+      <% }) %>
+    </table>
+    <br /><br />
+  </body>
+</html>
